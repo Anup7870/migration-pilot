@@ -1,0 +1,16 @@
+# Python virtual environments & cache
+**/venv/
+**/__pycache__/
+*.pyc
+
+# Local runtime & test outputs
+**/sandbox_env/
+**/migrated_project/
+**/*.zip
+
+# Node & frontend build outputs
+**/node_modules/
+**/dist/
+
+# Secret API keys & environment files
+**/.env

@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --palette-light: #ebe2cc;
+  --palette-sand: #ded6c1;
+  --palette-taupe: #cfc6b1;
+  --palette-stone: #b7b09e;
+  --obsidian-bg: #090a0d;
+}
+
+body {
+  background-color: #08090b;
+  color: #ebe2cc;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(18, 20, 26, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(183, 176, 158, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(207, 198, 177, 0.6);
+}
+
+/* Code Diff Line Highlighting */
+.diff-add-line {
+  background-color: rgba(34, 197, 94, 0.08);
+  border-left: 2px solid #4ade80;
+}
+
+.diff-remove-line {
+  background-color: rgba(239, 68, 68, 0.08);
+  border-left: 2px solid #f87171;
+}
+
+/* Syntax Glows & Accents */
+.badge-pilot {
+  background: rgba(235, 226, 204, 0.08);
+  border: 1px solid rgba(235, 226, 204, 0.2);
+  color: #ded6c1;
+}
+
+.glow-pilot {
+  box-shadow: 0 0 25px -5px rgba(235, 226, 204, 0.15);
+}
+
+.glow-active {
+  box-shadow: 0 0 15px -2px rgba(222, 214, 193, 0.25);
+}
